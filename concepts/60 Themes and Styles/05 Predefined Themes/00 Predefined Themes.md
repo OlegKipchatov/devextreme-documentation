@@ -1,273 +1,147 @@
-DevExtreme provides Generic, Generic Compact, and Material Design themes. These themes are available in the following colors:
+---
+id: dxDataGrid.Options.export.customizeExcelCell
+type: function(options)
+deprecated: Since v20.1, we recommend [ExcelJS-based export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/') which does not use this option.
+---
+---
+##### shortDescription
+Customizes an Excel cell after it is created.
 
-## Generic Themes
+##### param(options): Object
+Excel cell settings.
 
-<div id="generic-themes" class="theme-images">
-    <div>
-        <p>Light</p>
-        <img src="/Content/images/doc/19_2/themes/generic-light.png" />
-    </div>
-    <div>
-        <p>Light Compact</p>
-        <img src="/Content/images/doc/19_2/themes/generic-light-compact.png" />
-    </div>
-    <div>
-        <p>Dark</p>
-        <img src="/Content/images/doc/19_2/themes/generic-dark.png" />
-    </div>
-    <div>
-        <p>Dark Compact</p>
-        <img src="/Content/images/doc/19_2/themes/generic-dark-compact.png" />
-    </div>
-    <div>
-        <p>Carmine</p>
-        <img src="/Content/images/doc/19_2/themes/generic-carmine.png" />
-    </div>
-    <div>
-        <p>Carmine Compact</p>
-        <img src="/Content/images/doc/19_2/themes/generic-carmine-compact.png" />
-    </div>
-    <div>
-        <p>Soft Blue</p>
-        <img src="/Content/images/doc/19_2/themes/generic-softblue.png" />
-    </div>
-    <div>
-        <p>Soft Blue Compact</p>
-        <img src="/Content/images/doc/19_2/themes/generic-softblue-compact.png" />
-    </div>
-    <div>
-        <p>Dark Moon</p>
-        <img src="/Content/images/doc/19_2/themes/generic-darkmoon.png" />
-    </div>
-    <div>
-        <p>Dark Moon Compact</p>
-        <img src="/Content/images/doc/19_2/themes/generic-darkmoon-compact.png" />
-    </div>
-    <div>
-        <p>Dark Violet</p>
-        <img src="/Content/images/doc/19_2/themes/generic-darkviolet.png" />
-    </div>
-    <div>
-        <p>Dark Violet Compact</p>
-        <img src="/Content/images/doc/19_2/themes/generic-darkviolet-compact.png" />
-    </div>
-    <div>
-        <p>Green Mist</p>
-        <img src="/Content/images/doc/19_2/themes/generic-greenmist.png" />
-    </div>
-    <div>
-        <p>Green Mist Compact</p>
-        <img src="/Content/images/doc/19_2/themes/generic-greenmist-compact.png" />
-    </div>
-    <div>
-        <p>Contrast</p>
-        <img src="/Content/images/doc/19_2/themes/generic-contrast.png" />
-    </div>
-    <div>
-        <p>Contrast Compact</p>
-        <img src="/Content/images/doc/19_2/themes/generic-contrast-compact.png" />
-    </div>
-</div>
+##### field(options.backgroundColor): String
+The cell background color specified as a *"#RRGGBBAA"* value. <br/> R (red), G (green), B (blue), and A (alpha) are hexadecimal characters (0-9, A-F). A is optional.
 
-## Material Design Themes
+##### field(options.component): dxDataGrid
+The widget's instance.
 
-<div id="material-themes" class="theme-images">
-    <div>
-        <p>Blue Light</p>
-        <img src="/Content/images/doc/19_2/themes/material-bluelight.png" />
-    </div>
-    <div>
-        <p>Blue Light Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-bluelight-compact.png" />
-    </div>
-    <div>
-        <p>Blue Dark</p>
-        <img src="/Content/images/doc/19_2/themes/material-bluedark.png" />
-    </div>
-    <div>
-        <p>Blue Dark Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-bluedark-compact.png" />
-    </div>
-    <div>
-        <p>Lime Light</p>
-        <img src="/Content/images/doc/19_2/themes/material-limelight.png" />
-    </div>
-    <div>
-        <p>Lime Light Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-limelight-compact.png" />
-    </div>
-    <div>
-        <p>Lime Dark</p>
-        <img src="/Content/images/doc/19_2/themes/material-limedark.png" />
-    </div>
-    <div>
-        <p>Lime Dark Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-limedark-compact.png" />
-    </div>
-    <div>
-        <p>Orange Light</p>
-        <img src="/Content/images/doc/19_2/themes/material-orangelight.png" />
-    </div>
-    <div>
-        <p>Orange Light Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-orangelight-compact.png" />
-    </div>
-    <div>
-        <p>Orange Dark</p>
-        <img src="/Content/images/doc/19_2/themes/material-orangedark.png" />
-    </div>
-    <div>
-        <p>Orange Dark Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-orangedark-compact.png" />
-    </div>
-    <div>
-        <p>Purple Light</p>
-        <img src="/Content/images/doc/19_2/themes/material-purplelight.png" />
-    </div>
-    <div>
-        <p>Purple Light Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-purplelight-compact.png" />
-    </div>
-    <div>
-        <p>Purple Dark</p>
-        <img src="/Content/images/doc/19_2/themes/material-purpledark.png" />
-    </div>
-    <div>
-        <p>Purple Dark Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-purpledark-compact.png" />
-    </div>
-    <div>
-        <p>Teal Light</p>
-        <img src="/Content/images/doc/19_2/themes/material-teallight.png" />
-    </div>
-    <div>
-        <p>Teal Light Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-teallight-compact.png" />
-    </div>
-    <div>
-        <p>Teal Dark</p>
-        <img src="/Content/images/doc/19_2/themes/material-tealdark.png" />
-    </div>
-    <div>
-        <p>Teal Dark Compact</p>
-        <img src="/Content/images/doc/19_2/themes/material-tealdark-compact.png" />
-    </div>
-</div>
+##### field(options.fillPatternColor): String
+The foreground color of the cell fill pattern specified as a *"#RRGGBBAA"* value. <br/> R (red), G (green), B (blue), and A (alpha) are hexadecimal characters (0-9, A-F). A is optional.
 
-Each theme is a stylesheet that contains a collection of CSS classes. The following stylesheets are available out of the box:
+##### field(options.fillPatternType): 'darkDown' | 'darkGray' | 'darkGrid' | 'darkHorizontal' | 'darkTrellis' | 'darkUp' | 'darkVertical' | 'gray0625' | 'gray125' | 'lightDown' | 'lightGray' | 'lightGrid' | 'lightHorizontal' | 'lightTrellis' | 'lightUp' | 'lightVertical' | 'mediumGray' | 'none' | 'solid'
+The cell fill pattern.
 
-<div id="theme-files">
-    <div class="first-level">
-        <div class="second-level">
-            <div class="header">Generic</div>
-            <ul>
-                <li><code>dx.light.css</code></li>
-                <li><code>dx.dark.css</code></li>
-                <li><code>dx.carmine.css</code></li>
-                <li><code>dx.softblue.css</code></li>
-                <li><code>dx.darkmoon.css</code></li>
-                <li><code>dx.darkviolet.css</code></li>
-                <li><code>dx.greenmist.css</code></li>
-                <li><code>dx.contrast.css</code></li>
-            </ul>
-        </div>
-        <div class="second-level">
-            <div class="header">Generic Compact</div>
-            <ul>
-                <li><code>dx.light.compact.css</code></li>
-                <li><code>dx.dark.compact.css</code></li>
-                <li><code>dx.carmine.compact.css</code></li>
-                <li><code>dx.softblue.compact.css</code></li>
-                <li><code>dx.darkmoon.compact.css</code></li>
-                <li><code>dx.darkviolet.compact.css</code></li>
-                <li><code>dx.greenmist.compact.css</code></li>
-                <li><code>dx.contrast.compact.css</code></li>
-            </ul>
-        </div>
-    </div>
-    <div class="first-level">
-        <div class="second-level">
-            <div class="header">Material Design</div>
-            <ul>
-                <li><code>dx.material.blue.light.css</code></li>
-                <li><code>dx.material.blue.dark.css</code></li>
-                <li><code>dx.material.lime.light.css</code></li>
-                <li><code>dx.material.lime.dark.css</code></li>
-                <li><code>dx.material.orange.light.css</code></li>
-                <li><code>dx.material.orange.dark.css</code></li>
-                <li><code>dx.material.purple.light.css</code></li>
-                <li><code>dx.material.purple.dark.css</code></li>
-                <li><code>dx.material.teal.light.css</code></li>
-                <li><code>dx.material.teal.dark.css</code></li>
-            </ul>
-        </div>
-        <div class="second-level">
-            <div class="header">Material Design Compact</div>
-            <ul>
-                <li><code>dx.material.blue.light.compact.css</code></li>
-                <li><code>dx.material.blue.dark.compact.css</code></li>
-                <li><code>dx.material.lime.light.compact.css</code></li>
-                <li><code>dx.material.lime.dark.compact.css</code></li>
-                <li><code>dx.material.orange.light.compact.css</code></li>
-                <li><code>dx.material.orange.dark.compact.css</code></li>
-                <li><code>dx.material.purple.light.compact.css</code></li>
-                <li><code>dx.material.purple.dark.compact.css</code></li>
-                <li><code>dx.material.teal.light.compact.css</code></li>
-                <li><code>dx.material.teal.dark.compact.css</code></li>
-            </ul>
-        </div>
-    </div>    
-</div>
+##### field(options.font): ExcelFont
+The cell font.
 
-CSS themes are designed to customize HTML-based widgets. However, [SVG-based widgets](/concepts/60%20Themes%20and%20Styles/00%20HTML-%20and%20SVG-Based%20Widgets.md '/Documentation/Guide/Themes_and_Styles/HTML-_and_SVG-Based_Widgets/') use their own themes to assume an appearance that matches a particular CSS theme. Refer to the [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Themes') article for more information on themes in SVG-based widgets.
+##### field(options.gridCell): ExcelDataGridCell
+A **DataGrid** cell that corresponds to the Excel cell.
 
-<style>
-    #material-themes {
-        margin: 20px 0;
-    }
-    .theme-images {
-        font-size: 0;
-    }
-    .theme-images > div {
-        display: inline-block;
-        margin: 0 16px 10px 0;
-    }
-    .theme-images > div img {
-        outline: 1px solid #e3e3e3;
-    }
-    .theme-images > div p {
-        margin-bottom: 2px !important;
-        font-family: 'OpenSansCondensedBold', 'HelveticaNeue-CondensedBold', Helvetica, 'Arial Narrow', Calibri, Arial, 'Lucida Grande', sans-serift;
-        color: #627789 !important;
-    }
-    .first-level {
-        display: inline-block;
-        overflow: hidden;
-    }
-    .second-level {
-        display: inline-block;
-        vertical-align: top;
-        min-width: 330px;
-        margin: 0 0 20px -1px;
-    }
-    .second-level .header {
-        padding: 0 0 10px 60px;
-        font-weight: bold;
-    }
-    .second-level li {
-        list-style-type: none;
-        padding-top: 4px;
-    }
-    .second-level li:before {
-        color: #627789;
-        content: "";
-        border-radius: 3px;
-        border: 3px solid #627789;
-        display: inline-block;
-        margin-right: 15px;
-        vertical-align: middle;
-    }
-    .second-level:last-child {
-        border-left: 1px solid #e6e6e6;
-    }
-</style>
+##### field(options.horizontalAlignment): 'center' | 'centerContinuous' | 'distributed' | 'fill' | 'general' | 'justify' | 'left' | 'right'
+The horizontal cell alignment.
+
+##### field(options.numberFormat): String
+The format that specifies how the cell value is displayed.      
+Refer to the <a href="https://support.office.com/en-us/article/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5" target="_blank">Review guidelines for customizing a number format</a> article for more information.     
+Note that you should use `&quot;` instead of `"` to include a text entry. For example, the `0.0&quot; items&quot;` format results in `5` exported as `5 items`.
+
+##### field(options.value): String | Number | Date
+The cell value.
+
+##### field(options.verticalAlignment): 'bottom' | 'center' | 'distributed' | 'justify' | 'top'
+The vertical cell alignment.
+
+##### field(options.wrapTextEnabled): Boolean
+Specifies whether the cell text should be line-wrapped.
+
+---
+
+The following table shows the available fill patterns:
+
+<table id="grid">
+  <tr>
+  <td>
+
+<table class="dx-table">
+    <tr>
+        <th>Fill Pattern</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td><i>"darkDown"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/darkDown.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"darkGray"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/darkGray.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"darkGrid"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/darkGrid.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"darkHorizontal"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/darkHorizontal.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"darkTrellis"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/darkTrellis.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"darkUp"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/darkUp.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"darkVertical"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/darkVertical.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"gray0625"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/gray0625.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"gray125"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/gray125.png" /></td>
+    </tr>
+</table>
+
+  </td>
+  <td style="padding-left:10px">
+  
+<table class="dx-table">
+    <tr>
+        <th>Fill Pattern</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td><i>"lightDown"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/lightDown.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"lightGray"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/lightGray.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"lightGrid"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/lightGrid.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"lightHorizontal"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/lightHorizontal.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"lightTrellis"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/lightTrellis.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"lightUp"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/lightUp.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"lightVertical"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/lightVertical.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"mediumGray"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/mediumGray.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"solid"</i></td>
+        <td><img src="/images/ExcelExport/FillPatterns/solid.png" /></td>
+    </tr>
+</table>
+
+  </td>
+  </tr>
+</table>
