@@ -11,7 +11,7 @@ Here, *<bundle_name>* is a name of the configuration file without an extension. 
 
 After the file was created, you can edit it and leave only modules and exports you need.  
 
-[note]To use DevExtreme widgets with jQuery, Knockout, or AngularJS, ensure that you import the [jquery](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/060%20integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery'), [knockout](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/060%20integration/knockout.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/knockout'), or [angular](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/060%20integration/angular.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/angular') integration module.
+[note]To use DevExtreme widgets with jQuery, Knockout, or AngularJS, ensure that you import the [jquery](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery'), [knockout](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/knockout.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/knockout'), or [angular](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/angular.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/angular') integration module.
 
 
 The following command produces a minified bundle.
@@ -44,7 +44,7 @@ The example below demonstrates how to create an application with a single button
       <title>DevExtreme with a custom bundle example</title>
       <meta charset="utf-8">
         <!--External Scripts-->
-        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
         <!--Themes-->
@@ -93,7 +93,7 @@ The example below demonstrates how to create an application with a single button
     <head>
       <title>DevExtreme with a custom bundle and AngularJS example</title>
       <meta charset="utf-8">
-        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
@@ -147,7 +147,7 @@ The example below demonstrates how to create an application with a single button
     <head>
       <title>DevExtreme with a custom bundle and Knockout example</title>
       <meta charset="utf-8">
-        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>

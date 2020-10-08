@@ -24,12 +24,6 @@ The widget's instance.
 ##### field(e.item): dxFunnelItem
 The [Item](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Item/') object.
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the handler execution. Deprecated in favor of the **event** field.
-
 ##### field(e.model): Object
 The model data. Available only if you use Knockout.
 
@@ -76,9 +70,7 @@ This function is often used to implement item selection as shown in the followin
 
     <!-- tab: App.vue -->
     <template>
-        <DxFunnel ...
-            @item-click="selectItem">
-        </DxFunnel>
+        <DxFunnel @item-click="selectItem" />
     </template>
 
     <script>
@@ -106,9 +98,7 @@ This function is often used to implement item selection as shown in the followin
     class App extends React.Component {
         render() {
             return (
-                <Funnel ...
-                    onItemClick={this.selectItem}>
-                </Funnel>
+                <Funnel onItemClick={this.selectItem} />
             );
         }
 

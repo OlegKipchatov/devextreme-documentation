@@ -39,7 +39,7 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
     <html>
         <head>
             <!-- ... -->
-            <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
             <!-- DevExtreme resources -->
             <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
@@ -202,11 +202,15 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
         <div id="app-container">
             <DxTabPanel
                 @selection-changed="switchSDAs">
-                <DxItem #default title="Edit tab">
-                    <p>Edit tab's content</p>
+                <DxItem title="Edit tab">
+                    <template #default>
+                        <p>Edit tab's content</p>
+                    </template>
                 </DxItem>
-                <DxItem #default title="Share tab">
-                    <p>Share tab's content</p>
+                <DxItem title="Share tab">
+                    <template #default>
+                        <p>Share tab's content</p>
+                    </template>
                 </DxItem>
             </DxTabPanel>
             <!-- To be implemented -->

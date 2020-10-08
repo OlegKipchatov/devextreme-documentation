@@ -78,9 +78,6 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
     import DxPolarChart, {
         DxCommonAnnotationSettings
     } from 'devextreme-vue/polar-chart';
@@ -100,9 +97,6 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
     <!-- tab: App.js -->
     import React from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
 
     import PolarChart, {
         CommonAnnotationSettings
@@ -124,8 +118,8 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 ---
 
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Annotation/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PolarChartAnnotations/"
 }
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#customizeAnnotation')

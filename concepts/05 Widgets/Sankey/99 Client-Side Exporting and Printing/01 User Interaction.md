@@ -44,6 +44,50 @@ Set [export](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20C
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxExport
+                :enabled="true"
+                :printing-enabled="false"
+            />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxExport } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxExport
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Export } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Export
+                        enabled={true}
+                        printingEnabled={false}
+                    />
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
+
 ---
 
 Change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/formats.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/export/#formats') array to limit the set of export formats. You can also set the [fileName](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/fileName.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/export/#fileName') option to specify the export file's name.
@@ -86,6 +130,57 @@ Change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widge
         // ...
     })
 
----
+##### Vue
 
-You should [set up a server-side proxy](/concepts/05%20Widgets/Chart/99%20Client-Side%20Exporting%20and%20Printing/30%20Set%20Up%20a%20Server-Side%20Proxy '/Documentation/Guide/Widgets/Chart/Client-Side_Exporting_and_Printing/#Set_Up_a_Server-Side_Proxy') to enable exporting and printing in **Safari on MacOS**.
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxExport
+                :enabled="true"
+                :formats="exportFormats"
+                file-name="exported_sankey"
+            />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxExport } from 'devextreme-vue/sankey';
+    
+    export default {
+        components: {
+            DxSankey,
+            DxExport
+        },
+        data() {
+            return {
+                exportFormats: ['PNG', 'JPEG']
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Export } from 'devextreme-react/sankey';
+
+    const exportFormats = ['PNG', 'JPEG'];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Export
+                        enabled={true}
+                        formats={exportFormats}
+                        fileName="exported_sankey"
+                    />
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
+
+---

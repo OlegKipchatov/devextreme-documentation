@@ -27,14 +27,14 @@ dataSource: [
 ]
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/Widgets/SelectBox/Getting_Started_with_SelectBox/" 
+}
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/"
-}
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/SelectBox/Overview/"
 }
 
 #####See Also#####

@@ -102,7 +102,7 @@ For a minor customization of **ActionSheet** buttons, you can define [specific f
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 ##### Angular
@@ -152,7 +152,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     <!-- tab: App.vue -->
     <template>
         <DxActionSheet
-            :visible.sync="isActionSheetVisible"
+            v-model:visible="isActionSheetVisible"
             :data-source="actionSheetData"
             item-template="link">
             <template #link="{ data }">
@@ -187,8 +187,18 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     }
     </script>
 
+    <style>
+    .action-sheet-button {
+        margin: 5px;
+        padding: 10px;
+        border: 1px dotted #080;
+        background-color: white;
+    }
+    </style>
+
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
@@ -226,6 +236,14 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     }
 
     export default App;
+
+    <!-- tab: styles.css -->
+    .action-sheet-button {
+        margin: 5px;
+        padding: 10px;
+        border: 1px dotted #080;
+        background-color: white;
+    }
 
 ---
 

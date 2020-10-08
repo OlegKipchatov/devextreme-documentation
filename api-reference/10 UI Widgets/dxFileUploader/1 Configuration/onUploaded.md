@@ -23,11 +23,8 @@ The widget's instance.
 ##### field(e.file): File
 The uploaded file.
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the handler execution. Deprecated in favor of the **event** field.
+##### field(e.message): String
+The message displayed by the widget when uploading is finished.
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
@@ -36,3 +33,6 @@ Model data. Available only if Knockout is used.
 Specifies an XMLHttpRequest for the file.
 
 ---
+
+#####See Also#####
+- [uploadedMessage](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadedMessage)

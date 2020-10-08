@@ -1,0 +1,2 @@
+#####See Also#####
+- [coordinates](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/coordinates.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/commonAnnotationSettings/#coordinates')
