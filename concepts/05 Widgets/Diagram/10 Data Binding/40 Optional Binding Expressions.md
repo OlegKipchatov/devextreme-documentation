@@ -27,7 +27,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     </tr> 
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#imageUrlExpr">imageUrlExpr</a></td>
-        <td>A node image's URL. This option is in effect for nodes of the <i>cardWithImageOnLeft</i>, <i>cardWithImageOnTop</i>, or <i>cardWithImageOnRight</i> type.</td>
+        <td>A node's image URL or Base64 encoded image. This option is in effect for nodes of the <i>cardWithImageOnLeft</i>, <i>cardWithImageOnTop</i>, or <i>cardWithImageOnRight</i> type.</td>
         <td>"images/employees/30.png"</td>
     </tr> 
     <tr>
@@ -76,7 +76,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     </tr>
 </table>
 
-[note] If you bind a **Diagram** to a [linear](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array) or [hierarchical array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array), edge binding options are not in effect, because connectors are not bound to specific edges. This is why the storage of connector styles in a data source is not supported.
+[note] If you bind a **Diagram** to a [linear](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/20%20Linear%20Array.md '/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array') or [hierarchical array](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array'), edge binding options are not in effect, because connectors are not bound to specific edges. This is why the storage of connector styles in a data source is not supported.
 
 <table class="dx-table">
     <tr>
@@ -122,7 +122,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#textExpr">textExpr</a></td>
         <td>An edge's text.</td>
-        <td>"yes"</td>
+        <td>"text" or { 0.3: "text1", 0.8: "text2" }</td>
     </tr>    
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toExpr">textStyleExpr</a></td>

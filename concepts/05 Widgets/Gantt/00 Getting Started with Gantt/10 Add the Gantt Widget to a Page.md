@@ -2,7 +2,7 @@ Add **Gantt** resources (scripts and styles) onto the page.
 
 - **npm**
 
-    The `devexpress-gantt` is a dependency package of the `DevExtreme` package. Therefore, [install the DevExtreme npm package](/concepts/Common/Distribution%20Channels/01%20npm '/Documentation/Guide/Common/Distribution_Channels/npm/') to include the **Gantt** widget in your project. Then, add the `dx-gantt.min.css` and `dx-gantt.min.js` files to your page.
+    The `devexpress-gantt` is a dependency package of the `DevExtreme` package. Therefore, [install the DevExtreme npm package](/concepts/Common/Distribution%20Channels/01%20npm.md '/Documentation/Guide/Common/Distribution_Channels/npm/') to include the **Gantt** widget in your project. Then, add the `dx-gantt.min.css` and `dx-gantt.min.js` files to your page.
 
         <!--HTML-->
         <link rel="stylesheet" href="node_modules/devexpress-gantt/dx-gantt.min.css">
@@ -35,7 +35,7 @@ The **Gantt** widget is a jQuery DevExtreme widget, and thus requires common Dev
     <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css">
     <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.light.css">
     <!-- jQuery -->
-    <script src="~/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- DevExtreme common scripts -->
     <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.js"></script>
         

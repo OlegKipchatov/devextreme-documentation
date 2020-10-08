@@ -1,7 +1,7 @@
 ---
-id: dxLookup.Options.itemCenteringEnabled
-type: Boolean
-default: false, true (Material)
+id: dxSVGElement
+type: SVGElement | jQuery
+hidden: 
 ---
 ---
 ##### shortDescription

@@ -1,8 +1,8 @@
-Edit the `src\app\app-navigation.ts` file to configure navigation menu items. Each item configuration can have the following fields:
+Edit the `src\app-navigation.js` file to configure navigation menu items. Each item configuration can have the following fields:
 
 - **text** - the item's text
 
-- **icon** - the item's icon
+- **icon** - the item's [icon](/concepts/60%20Themes%20and%20Styles/30%20Icons/00%20Icons.md '/Documentation/Guide/Themes_and_Styles/Icons/')
 
 - **path** - a navigation path associated with the item
 
